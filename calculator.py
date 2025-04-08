@@ -1,20 +1,14 @@
 #Creating functions
-def add(x,y):
-    print("Summed:", x+y)
-def subtract(x,y):
-    print("Subtracted:", x-y)
-def multiply(x,y):
-    print("Multiplied:", x*y)
-def divide(x,y):
-    print("Divided", x/y)
+def add(x,y): return x+y
+def subtract(x,y): return x-y
+def multiply(x,y): return x*y
+def divide(x,y): 
+    return x/y if y != 0 else "Cannot divide by zero!"
 
-#User instructions and input
-print("Enter two numbers to be a part of the equasion")
-x = int(input("First number: "))
-y = int(input("Second number: "))
-
+x = 5
+y = 6
 #Calling functions
-add(x,y)
-subtract(x,y)
-multiply(x,y)
-divide(x,y)
+print(f"{x} + {y} = ", add(x,y))
+print(f"{x} - {y} = ", subtract(x,y))
+print(f"{x} * {y} = ", multiply(x,y))
+print(f"{x} / {y} = ", divide(x,y))
