@@ -1,4 +1,5 @@
 import math
+
 #Creating math functions
 def add(x,y): return x+y
 def subtract(x,y): return x-y
@@ -19,7 +20,8 @@ def square_root(x):
     if x < 0:
         return f"Can't calculate Sqrt({x}), as it must be positive!"
     return math.sqrt(x)
-#User input function
+
+#User input functions
 def user_input():
     try:
         x = int(input("Insert X value: "))
